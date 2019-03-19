@@ -90,7 +90,7 @@ impl Solution {
             }
         }
 
-        println!("s_index={:#?} s_list.len={:?} p_index={:#?} p_list.len={:#?} p_use={:?}", s_index, s_list.len(), p_index, p_list.len(), p_use);
+        // println!("s_index={:#?} s_list.len={:?} p_index={:#?} p_list.len={:#?} p_use={:?}", s_index, s_list.len(), p_index, p_list.len(), p_use);
         if s_list.len() == s_index {
             if p_list.len() == p_use + 1 {
                 return true;
@@ -110,7 +110,7 @@ impl Solution {
     }
 
     pub fn is_match(s: String, p: String) -> bool {
-        println!("s={:?} p={:?}", s, p);
+        // println!("s={:?} p={:?}", s, p);
 
         let p_list = Solution::get_list(p);
 
